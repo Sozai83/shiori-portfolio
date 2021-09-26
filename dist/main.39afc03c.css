@@ -127,12 +127,37 @@ section.projects .container h3 {
   font-weight: 800;
   line-height: 72px;
 }
-section.projects .container .projects {
+section.projects .container .project-tv {
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-section.projects .container .projects img {
-  height: 70vh;
+section.projects .container .project-tv .project-tv-imgs {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+section.projects .container .project-tv .project-tv-imgs img.retro-tv {
+  max-width: 100%;
+}
+section.projects .container .project-tv .project-tv-imgs .project {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 265px);
+}
+section.projects .container .project-tv .project-tv-imgs .project.selected {
+  display: inline-block;
+}
+section.projects .container .project-tv .project-tv-imgs .project img {
+  max-width: 45%;
+}
+section.projects .container .project-tv i {
+  font-size: 48px;
+  margin: 0 20px;
 }
 section.projects .wave-right {
   position: absolute;

@@ -142,11 +142,40 @@ section.projects{
             line-height: 72px;
         }
 
-        .projects{
+        .project-tv{
             margin: 0 auto;
-            text-align: center;
-            img{
-                height: 70vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .project-tv-imgs{
+                margin: 0;
+                padding: 0;
+                width: 50%;
+                img.retro-tv{
+                    max-width: 100%; 
+                }
+    
+                .project{
+                    display: none;
+                    position: absolute;
+                    top: 40%;
+                    left: calc(50% - 265px);
+
+                    &.selected{
+                        display: inline-block;
+                    }
+                    img{
+                        max-width: 45%;
+                    }
+                }
+            }
+
+            i{
+                font-size: 48px;
+                margin: 0 20px;
             }
         }
     }
