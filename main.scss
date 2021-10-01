@@ -144,31 +144,62 @@ section.projects{
 
         .project-tv{
             margin: 0 auto;
+            width: 100%;
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
-            position: relative;
+            text-align: center;
+            margin: 0 auto;
 
             .project-tv-imgs{
                 margin: 0;
                 padding: 0;
-                width: 50%;
-                img.retro-tv{
-                    max-width: 100%; 
+                background: url(./img/retro_tv.jpg) no-repeat 0 0;
+                background-size: 660px;
+                width: 660px;
+                height: 580px;
+                position:relative;
+
+                @media only screen and (max-width : 920px){
+                    background-size: 420px;
+                    width: 420px;
+                    height: 380px;
+                }
+                @media only screen and (max-width : 660px){
+                    background-size: 300px;
+                    width: 300px;
+                    height: 280px;
                 }
     
                 .project{
                     display: none;
                     position: absolute;
-                    top: 40%;
-                    left: calc(50% - 265px);
+                    top: calc(50% - 140px);
+                    left: calc(50% - 280px);
 
                     &.selected{
                         display: inline-block;
                     }
                     img{
-                        max-width: 45%;
+                        width: 440px;
+                        max-width:100%;
+
+                        @media only screen and (max-width : 920px){
+                            width: 280px;
+                        }
+                        @media only screen and (max-width : 660px){
+                            width: 200px;
+                        }
+                    }
+
+                    @media only screen and (max-width : 920px){
+                        top: calc(50% - 95px);
+                        left: calc(50% - 175px);
+                    }
+
+                    @media only screen and (max-width : 660px){
+                        top: calc(50% - 70px);
+                        left: calc(50% - 125px);
                     }
                 }
             }
@@ -176,6 +207,10 @@ section.projects{
             i{
                 font-size: 48px;
                 margin: 0 20px;
+
+                @media only screen and (max-width : 550px){
+                    display:none;
+                }
             }
         }
     }
