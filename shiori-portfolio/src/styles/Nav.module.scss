@@ -1,0 +1,16 @@
+@use 'variables';
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navlist{
+    display: flex;
+    li{
+        padding-right: 40px;
+        font-size: 1.2em;
+        
+    }
+}

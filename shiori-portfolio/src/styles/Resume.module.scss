@@ -1,0 +1,16 @@
+.resume{
+    .wrapper{
+        padding: 20px;
+        text-align: center;
+    }
+
+    button{
+        border-radius: 10px;
+        font-size: 1em;
+        padding: 20px;
+        margin: 20px auto;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

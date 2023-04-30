@@ -1,0 +1,49 @@
+@use 'variables';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+body {
+  color: variables.$marsala-darker;
+  background: variables.$ivory;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 2.6em;
+}
+
+ul li{
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0;
+}
+
+.react-pdf__Document canvas{
+  margin: 0 auto;
+  width: 70% !important;
+  height: 100% !important;
+}
+
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations.annotationLayer  {display: none;}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
