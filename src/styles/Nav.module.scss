@@ -23,6 +23,10 @@
             font-size: 1.2em;
             text-align: center;
 
+            a{
+                width: 100%;
+            }
+
             &::after{
                 content:'';
                 display: block;

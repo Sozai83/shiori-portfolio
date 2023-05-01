@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section>
         <Nav/>
-        <div class={Styles.wrapper}>
+        <div className={Styles.wrapper}>
             <h1>Thanks for visiting my portfolio!</h1>
             <h2>Here's a bit more about me...</h2>
         </div>

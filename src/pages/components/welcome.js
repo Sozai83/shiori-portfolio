@@ -21,6 +21,7 @@ function Welcome({name}) {
         I'm a developer who likes to create things with code! 
     </p>
     <p>I am...</p>
+    <p></p>
 
     </section>
     <figure>
