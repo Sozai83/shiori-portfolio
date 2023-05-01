@@ -8,7 +8,7 @@ export default function About() {
     <section>
         <Nav/>
         <div class={Styles.wrapper}>
-            <h1>Thanks for your interest!</h1>
+            <h1>Thanks for visiting my portfolio!</h1>
             <h2>Here's a bit more about me...</h2>
         </div>
     </section>

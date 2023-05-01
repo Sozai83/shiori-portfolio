@@ -6,11 +6,37 @@
     padding: 20px;
 }
 
-.navlist{
-    display: flex;
-    li{
-        padding-right: 40px;
-        font-size: 1.2em;
-        
+.logo{
+    width: 80%;
+}
+
+.topNav{
+    align-items: center;
+
+    .navlist{
+        display: flex;
+        padding-right: 20px;
+        li{
+            width: 100px;
+            padding: 10px;
+            margin-right: 20px;
+            font-size: 1.2em;
+            text-align: center;
+
+            &::after{
+                content:'';
+                display: block;
+                margin-top: 10px;
+                width: 0;
+                height: 3px;
+                background: variables.$tangerine;
+                transition: width 0.5s ease-in-out;
+            }
+
+            &:hover::after,
+            &.active::after{
+                width: 100%;
+            }
+        }
     }
 }
