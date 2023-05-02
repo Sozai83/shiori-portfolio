@@ -14,7 +14,7 @@ export default function Nav() {
         <div className={Styles.wrapper}>
             <figure>
                 <Link href='/'>
-                    <img src='/chikku_logo.png' alt="Chikku Webdesign Logo" className={Styles.logo}/>
+                    <Image src='/chikku_logo.png' alt="Chikku Webdesign Logo" className={Styles.logo} width={160} height={100}/>
                 </Link>  
             </figure>
             <nav id="topNav" className={Styles.topNav}>
