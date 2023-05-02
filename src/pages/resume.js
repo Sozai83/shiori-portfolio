@@ -14,13 +14,13 @@ export default function Resume() {
             
             <div className={Styles.wrapper}>
             <h1>Resume</h1>
-                <a href={resume} target="_blank" download><button>Click here to donwload CV</button></a>
+                <a href={resume} target="_blank" download><button>Click here to download CV</button></a>
                 <Document file={resume}>
                     <Page pageIndex={0}/>
                     <Page pageIndex={1}/>
                     <Page pageIndex={2}/>
                 </Document>
-                <a href={resume} target="_blank" download><button>Click here to donwload CV</button></a>
+                <a href={resume} target="_blank" download><button>Click here to download CV</button></a>
             </div> 
         </section>
     </>

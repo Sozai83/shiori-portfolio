@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Main() {
   return (
     <main>
-        <Nav/>
+        <Nav tempActive="topnav-home"/>
         <Welcome name=""/>
         <Skills/>
     </main>

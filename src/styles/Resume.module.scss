@@ -1,7 +1,17 @@
+@use 'variables';
+
 .resume{
     .wrapper{
         padding: 20px;
         text-align: center;
+
+        canvas{
+            margin: 0 auto;
+            width: 70% !important;
+            max-width: 760px;
+            height: 100% !important;
+          }
+          
     }
 
     button{
@@ -9,8 +19,15 @@
         font-size: 1em;
         padding: 20px;
         margin: 20px auto;
+        color: variables.$ivory;
+        background-color: variables.$tangerine;
+        border: 2px solid variables.$ivory;;
+
         &:hover{
             cursor: pointer;
+            color: variables.$tangerine;
+            background-color: variables.$ivory;
+            border: 2px solid variables.$tangerine;
         }
     }
 }
