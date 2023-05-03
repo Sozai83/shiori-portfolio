@@ -1,0 +1,15 @@
+@use '../variables';
+
+.wrapper{
+    padding: 20px;
+    background-color: variables.$pewter;
+    height: calc(100vh - 600px);
+
+    h1{
+        text-align: center;
+    }
+
+    svg{
+        background-color: #fff;
+    }
+}

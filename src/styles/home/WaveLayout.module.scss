@@ -1,0 +1,14 @@
+@use '../variables';
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+}
+
+.white{
+    background-color: #fff;
+}
+
+.ivory{
+    background-color: variables.$ivory;
+}

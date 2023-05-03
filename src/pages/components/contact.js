@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import withWaveSection from '../wavelayout'
-import Styles from '../../styles/home/Skills.module.scss'
+import Styles from '../../styles/home/Contact.module.scss'
 
 //Home page - Skills/Tech stack section
-function Skills() {
+export default function Contact() {
 
   return (
     
     <section id="skills">
         <div className={Styles.wrapper}>
           <h1>
-              Show case what I can do
+              Contact
           </h1>
           
 
@@ -22,5 +22,3 @@ function Skills() {
 
   )
 }
-
-export default withWaveSection(Skills, '#D0D1D3', 'white');

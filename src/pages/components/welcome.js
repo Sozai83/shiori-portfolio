@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import withWaveSection from '../wavelayout'
-import Styles from '../../styles/Welcome.module.scss'
+import Styles from '../../styles/home/Welcome.module.scss'
 
 function Welcome({name}) {
     
@@ -14,7 +14,7 @@ function Welcome({name}) {
     <h1>
          Hello {tempName}, my name is
     </h1>
-    <h1 id="myName">
+    <h1 id="myName" className={Styles.myName}>
          Shiori Chiku
     </h1>
     <p>
@@ -28,9 +28,9 @@ function Welcome({name}) {
         <img src="/chikku.png" alt="test" width="300" height="300"></img>
     </figure>
     </div>
-    <Link href="" className={Styles.next}><button>Exprole Shiori's Work!</button></Link>
+    <Link href="" className={Styles.next}><button>What Shiori can do?</button></Link>
     </>
   )
 }
 
-export default withWaveSection(Welcome, '#fff');
+export default withWaveSection(Welcome, '#fff', 'ivory');
