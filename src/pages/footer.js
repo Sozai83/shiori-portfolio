@@ -7,6 +7,8 @@ import { faLinkedin, faGithubSquare , faTwitterSquare} from '@fortawesome/free-b
 
 
 export default function Footer() {
+  const today = new Date();
+  const currentYear = today.getFullYear();
   return (
     <section id="footer">
         <ul>
@@ -14,7 +16,7 @@ export default function Footer() {
             <Link href=""><FontAwesomeIcon icon={faLinkedin} /></Link>
             <Link href=""><FontAwesomeIcon icon={faTwitterSquare} /></Link>
         </ul>
-        <p>Footer</p>
+        <p>&copy; Copyright {currentYear}, Shiori Chiku</p>
     </section>
   )
 }
