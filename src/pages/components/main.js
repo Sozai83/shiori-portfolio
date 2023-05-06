@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Nav from './nav'
 import Welcome from './welcome'
-import Skills from './skills'
+import RecentWork from './recentWork'
+import ShortAboutMe from './short_about_me'
 import Contact from './contact'
 import Footer from '../footer'
 import { Inter } from 'next/font/google'
@@ -13,7 +14,8 @@ export default function Main() {
     <main>
         <Nav tempActive="topnav-home"/>
         <Welcome name=""/>
-        <Skills/>
+        <RecentWork/>
+        <ShortAboutMe/>
         <Contact/>
         <Footer/>
     </main>

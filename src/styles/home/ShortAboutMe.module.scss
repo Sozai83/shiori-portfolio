@@ -1,0 +1,87 @@
+@use '../variables';
+
+.wrapper{
+    padding: 40px;
+    background-color: variables.$ivory;
+    height: calc(100vh - 600px);
+    min-height: 100%;
+    display: flex;
+
+    .descriptionWrapper{
+        width: 60%;
+        text-align: left;
+        align-self: center;
+        padding: 0 40px;
+
+        h2{
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        .desciption{
+            padding: 20px 0;
+        }
+
+        .skills{
+            margin-bottom: 40px;
+            div{
+                margin: 20px 0;
+
+                span{
+                    padding: 10px;
+                    margin-right: 10px;
+                    background: variables.$white;
+                    border-radius: 5px;
+                    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+                }
+
+            }
+            
+        }
+
+        a{
+            svg{
+                height: 40px;
+                margin-right: 10px;
+                
+                &:hover{
+                    color: variables.$tangerine;
+                }
+            }
+
+            
+        }
+
+        button{
+            border-radius: 10px;
+            font-size: 1em;
+            padding: 10px 40px;
+            margin: 20px auto;
+            color: variables.$ivory;
+            background-color: variables.$tangerine;
+            border: 1px solid variables.$tangerine;
+            box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+            font-weight: 200;
+
+            &:hover{
+                cursor: pointer;
+                color: variables.$tangerine;
+                background-color: variables.$ivory;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    figure{
+        align-self: center;
+        width: 40%;
+        text-align: center;
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    svg{
+        background-color: #fff;
+    }
+}
