@@ -10,7 +10,7 @@ function Welcome({name}) {
   return (
     <>
     <div className={Styles.wrapper}>
-    <section id="introduction">
+    <section id="welcome">
     <h1>
          Hello {tempName}, my name is
     </h1>

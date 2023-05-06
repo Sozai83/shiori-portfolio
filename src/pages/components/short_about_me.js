@@ -11,7 +11,7 @@ function ShortAboutMe() {
 
   return (
     
-    <section id="recentwork">
+    <section id="shortaboutme">
         <div className={Styles.wrapper}>
           <figure>
             <Link href="">

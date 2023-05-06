@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     
-    <section id="skills">
+    <section id="contact">
         <div className={Styles.wrapper}>
           <h1>
               Contact
