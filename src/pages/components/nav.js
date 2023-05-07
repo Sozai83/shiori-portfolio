@@ -21,7 +21,7 @@ export default function Nav() {
                 <ul ref={topNavUl} className={Styles.navList}>
                     <li id="topnav-home" className={ router.pathname == "/" ? Styles.active : ""}><Link  href="/">Home</Link></li>
                     <li id="topnav-about" className={ router.pathname == "/about" ? Styles.active : ""}><Link href="/about">About</Link></li>
-                    <li id="topnav-projects" className={ router.pathname == "/projects" ? Styles.active : ""}><Link href="/projects">Projects</Link></li>
+                    <li id="topnav-projects" className={ /projects/.test(router.pathname) ? Styles.active : ""}><Link href="/projects">Projects</Link></li>
                     <li id="topnav-contact" className={ router.pathname == "/contact" ? Styles.active : ""}><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>

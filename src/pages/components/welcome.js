@@ -10,7 +10,7 @@ function Welcome({name}) {
   return (
     <>
     <div className={Styles.wrapper}>
-    <section id="welcome">
+    <section>
     <h1>
          Hello {tempName}, my name is
     </h1>
@@ -33,4 +33,4 @@ function Welcome({name}) {
   )
 }
 
-export default withWaveSection(Welcome, '#fff', 'ivory');
+export default withWaveSection(Welcome, '#fff', 'ivory', 'welcome');

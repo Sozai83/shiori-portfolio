@@ -9,7 +9,7 @@ function ShortAboutMe() {
 
   return (
     
-    <section id="shortaboutme">
+    <section>
         <div className={Styles.wrapper}>
           <figure>
             <Link href="">
@@ -67,4 +67,4 @@ function ShortAboutMe() {
   )
 }
 
-export default withWaveSection(ShortAboutMe, '#D0D1D3', 'ivory');
+export default withWaveSection(ShortAboutMe, '#D0D1D3', 'ivory', 'shortaboutme');

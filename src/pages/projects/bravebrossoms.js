@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Nav from '../components/nav'
+import Footer from '../footer'
 import withWaveSection from '../wavelayout'
 import Styles from '../../styles/home/RecentWork.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,16 +9,22 @@ import {faSquareArrowUpRight} from '@fortawesome/free-solid-svg-icons'
 import { faGithubSquare} from '@fortawesome/free-brands-svg-icons'
 
 //Home page - Skills/Tech stack section
-function RecentWork() {
-
+function projectCards() {
   return (
-    
-    <section>
+    <main>
+      <section>
         <div className={Styles.wrapper}>
+          <figure>
+            <a target="_blank" href="https://brave-blossoms-portal.netlify.app/">
+              <Image  src='/projects_img/Braveblossom_Top.JPG' 
+                      alt="Chikku Webdesign Logo" 
+                      className={Styles.logo} 
+                      width={440}
+                      height={400}
+              />
+            </a>
+          </figure>
           <div className={Styles.descriptionWrapper}>
-            <h2>
-              Recent Work
-            </h2>
             <h1>
               BraveBlossoms Portal
             </h1>
@@ -35,10 +43,6 @@ function RecentWork() {
               <span>ReactJS</span>
             </div>
             <div className={Styles.outsideLinks}>
-              <Link href=""><FontAwesomeIcon icon={faGithubSquare} /></Link>
-              <Link href=""><FontAwesomeIcon icon={faSquareArrowUpRight} /></Link>
-            </div>
-            <div className={Styles.buttons}>
               <a target="_blank" href="https://github.com/Sozai83">
                 <FontAwesomeIcon icon={faGithubSquare} />
               </a>
@@ -46,22 +50,30 @@ function RecentWork() {
                 <FontAwesomeIcon icon={faSquareArrowUpRight} />
               </a>
             </div>
+            <div className={Styles.buttons}>
+              <Link href="/projects">
+                <button>
+                  Check other projects
+                </button>
+              </Link>
+            </div>
           </div>
-          <figure>
-            <Link href="/projects">
-              <Image  src='/projects_img/Braveblossom_Top.JPG' 
-                      alt="Chikku Webdesign Logo" 
-                      className={Styles.logo} 
-                      width={440}
-                      height={400}
-              />
-            </Link>
-          </figure>
         </div>
-    </section>
-      
+      </section>
+    </main>
 
   )
 }
 
-export default withWaveSection(RecentWork, '#EEEDE7', 'white', 'recentwork');
+const BraveBlossomsWave = withWaveSection(projectCards, '#EEEDE7', 'white', 'recentwork');
+
+export default function BraveBrossoms(){
+  return (
+    <>
+      <Nav tempActive="topnav-projects"/>
+      <BraveBlossomsWave/>
+      <Footer/>
+    </>
+
+  )
+}
