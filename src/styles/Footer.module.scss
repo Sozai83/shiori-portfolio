@@ -1,0 +1,25 @@
+@use 'variables';
+
+.wrapper{
+    padding: 20px;
+    text-align: center;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        li{
+            font-size: 2em;
+            margin-right: 10px;
+
+            &:hover{
+                color: variables.$tangerine;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+}

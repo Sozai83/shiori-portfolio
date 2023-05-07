@@ -2,12 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import withWaveSection from '../wavelayout'
 import Styles from '../../styles/home/ShortAboutMe.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faSquareArrowUpRight} from '@fortawesome/free-solid-svg-icons'
-import { faGithubSquare} from '@fortawesome/free-brands-svg-icons'
 
 //Home page - Skills/Tech stack section
 function ShortAboutMe() {
+  const resume = '/myresume2023.pdf';
 
   return (
     
@@ -51,9 +49,16 @@ function ShortAboutMe() {
                     <span>Python</span>
                 </div>
             </div>
-            <button>
-              Learn more about me
-            </button>
+            <div className={Styles.buttons}>
+              <Link href="/about">
+                <button>
+                  Learn more about me
+                </button>
+              </Link>
+              <a href={resume} target="_blank" download>
+                <button>Download CV</button>
+              </a>
+            </div>
           </div>
         </div>
     </section>
