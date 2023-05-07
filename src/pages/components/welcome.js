@@ -28,7 +28,7 @@ function Welcome({name}) {
         <img src="/chikku.png" alt="test" width="300" height="300"></img>
     </figure>
     </div>
-    <Link href="" className={Styles.next}><button>What Shiori can do?</button></Link>
+    <Link href="#recentwork" className={Styles.next}><button>What Shiori can do?</button></Link>
     </>
   )
 }
