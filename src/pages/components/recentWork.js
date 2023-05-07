@@ -24,8 +24,11 @@ function RecentWork() {
               2023 March
             </h3>
             <div className={Styles.desciption}>
-              A single page web application where people can learn more about the Japan national  
-            </div>
+              <p>
+                This is a single page web application.<br/>
+                Since hosting the Rugby World Cup in 2019, the growing audience is diverse so I wanted to design a website which any fan, new or seasoned, young or old, can use to learn more about The Brave Blossoms my home team.
+              </p>
+              </div>
             <div className={Styles.techStacks}>
               <span>HTML</span>
               <span>SCSS</span>
@@ -35,12 +38,21 @@ function RecentWork() {
               <Link href=""><FontAwesomeIcon icon={faGithubSquare} /></Link>
               <Link href=""><FontAwesomeIcon icon={faSquareArrowUpRight} /></Link>
             </div>
-            <button>
-              See Project
-            </button>
+            <div className={Styles.buttons}>
+              <Link href="/projects/bravebrossoms">
+                <button>
+                  See Project
+                </button>
+              </Link>
+              <Link href="/projects">
+                <button>
+                  Check other projects
+                </button>
+              </Link>
+            </div>
           </div>
           <figure>
-            <Link href="">
+            <Link href="/projects">
               <Image  src='/projects_img/Braveblossom_Top.JPG' 
                       alt="Chikku Webdesign Logo" 
                       className={Styles.logo} 
