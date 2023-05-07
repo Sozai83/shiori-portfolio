@@ -21,7 +21,7 @@ function projectCards() {
             2023 March
           </h3>
           <section className={Styles.outsideLinks}>
-            <a target="_blank" href="https://github.com/Sozai83">
+            <a target="_blank" href="https://github.com/Sozai83/COS60015-Assignment2v2">
               <FontAwesomeIcon icon={faGithubSquare} />
             </a>
             <a target="_blank" href="https://brave-blossoms-portal.netlify.app/">
@@ -55,6 +55,13 @@ function projectCards() {
                   and based on that, I came up with features they would appreciate and created user stories.
                 </p>
                 <h3>Project planning</h3>
+                <p>
+                  Using Jira, 
+                </p>
+                <h3>Designining</h3>
+                <p>
+                  Using Miro and Adobe Colors, 
+                </p>
 
                 <div className={Styles.buttons}>
           <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vT_6Fj8DalLFWWQXFdMhtP2acERQMAz_ebe5Hdyc60AcCpMiJVPdDO-_YBA7m2sDDGDKsXheRyYivjj/pub">
@@ -81,7 +88,7 @@ function projectCards() {
             <div className={Styles.descriptionWrapper}>
               <h2>02. Developing</h2>     
                 <div className={Styles.techStacks}>
-                  <h4>Tech Stack</h4>
+                  <h4>Main Laguages:</h4>
                   <span>HTML</span>
                   <span>SCSS</span>
                   <span>ReactJS</span>

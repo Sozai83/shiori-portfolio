@@ -35,7 +35,7 @@ function RecentWork() {
               <span>ReactJS</span>
             </div>
             <div className={Styles.outsideLinks}>
-              <a target="_blank" href="https://github.com/Sozai83">
+              <a target="_blank" href="https://github.com/Sozai83/COS60015-Assignment2v2">
                 <FontAwesomeIcon icon={faGithubSquare} />
               </a>
               <a target="_blank" href="https://brave-blossoms-portal.netlify.app/">
