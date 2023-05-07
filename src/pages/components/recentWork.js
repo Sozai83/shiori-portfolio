@@ -35,16 +35,24 @@ function RecentWork() {
               <span>ReactJS</span>
             </div>
             <div className={Styles.outsideLinks}>
-              <Link href=""><FontAwesomeIcon icon={faGithubSquare} /></Link>
-              <Link href=""><FontAwesomeIcon icon={faSquareArrowUpRight} /></Link>
-            </div>
-            <div className={Styles.buttons}>
               <a target="_blank" href="https://github.com/Sozai83">
                 <FontAwesomeIcon icon={faGithubSquare} />
               </a>
               <a target="_blank" href="https://brave-blossoms-portal.netlify.app/">
                 <FontAwesomeIcon icon={faSquareArrowUpRight} />
               </a>
+            </div>
+            <div className={Styles.buttons}>
+              <Link href="/projects/bravebrossoms">
+                <button>
+                  See Project
+                </button>
+              </Link>
+              <Link href="/projects">
+                <button>
+                  Check other projects
+                </button>
+              </Link>
             </div>
           </div>
           <figure>
