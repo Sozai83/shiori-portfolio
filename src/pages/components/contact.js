@@ -13,6 +13,9 @@ export default function Contact() {
           <h1>
               Contact
           </h1>
+          <form>
+            <input type="submit"/>
+          </form>
           
 
           
