@@ -58,7 +58,7 @@
         font-size: 1em;
         padding: 10px;
         margin: 20px auto;
-        color: variables.$ivory;
+        color: variables.$white;
         background-color: variables.$tangerine;
         border: 2px solid variables.$tangerine;
         font-weight: 500;
@@ -67,8 +67,9 @@
         &:hover{
             cursor: pointer;
             color: variables.$tangerine;
-            background-color: variables.$ivory;
+            background-color: variables.$white;
             border: 2px solid variables.$tangerine;
+            border-radius: 60px;
         }
     }
 }

@@ -57,7 +57,7 @@ export default function Contact() {
                     onChange={(e)=>{setQuery(e.target.value)}} 
                     required/>
             </div>
-            <button type="submit">Send an email to me!</button>
+            <button type="submit">Contact Shiori</button>
           </form>
 
   )
