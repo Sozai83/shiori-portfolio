@@ -13,8 +13,10 @@ export default function Contact() {
           <h1>
               Contact
           </h1>
-          <form>
-            <input type="submit"/>
+          <form action="https://formsubmit.co/chikushi3.227@gmail.com" method="POST">
+              <input type="text" name="name" required/>
+              <input type="email" name="email" required/>
+              <button type="submit">Send</button>
           </form>
           
 
