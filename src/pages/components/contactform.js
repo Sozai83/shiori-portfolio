@@ -19,9 +19,9 @@ export default function Contact({changeSubmitStatus}) {
                 email: email,
                 message: query
             })
-                .then(response => console.log(response))
+                .then(() => console.log('Form submitted successfully'))
                 .catch(error => console.log(error));
-                changeSubmitStatus();
+            changeSubmitStatus();
 
     }
 
