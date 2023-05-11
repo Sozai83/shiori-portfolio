@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from 'react';
-import withWaveSection from '../wavelayout'
+import axios from "axios";
 import Styles from '../../styles/home/ContactForm.module.scss'
 
 //Home page - Skills/Tech stack section
@@ -10,10 +10,25 @@ export default function Contact() {
     const [lname, setLname] = useState('');
     const [email, setEmail] = useState('');
     const [query, setQuery] = useState('');
+    const [submit, setSubmit] = useState(false);
+
+    const submitHandler = (e)=>{
+        e.preventDefault();
+        setSubmit(true);
+        if(submit){
+            axios.defaults.headers.post['Content-Type'] = 'application/json';
+            axios.post('https://formsubmit.co/ajax/chikushi3.227@gmail.com', {
+                name: "FormSubmit",
+                message: "I'm from Devro LABS"
+            })
+                .then(response => console.log(response))
+                .catch(error => console.log(error));
+        }
+    }
 
 
   return (
-          <form className={Styles.form} action="https://formsubmit.co/chikushi3.227@gmail.com" method="POST">
+          <form className={Styles.form} onSubmit={submitHandler}>
             {/* honepot */}
             <input type="text" name="_honey" style={{'display': 'none'}}/>
             {/* disable captcha */}
