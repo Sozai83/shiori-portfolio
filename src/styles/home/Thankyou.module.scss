@@ -1,0 +1,39 @@
+@use '../variables.scss';
+
+.thankyou{
+    margin: 40px 0;
+    h2{
+        margin: 40px 0;
+    }
+
+    p{
+        font-size: 1.1em;
+    }
+
+    a{
+        &:hover{
+            cursor: pointer;
+            color: variables.$tangerine;
+        }
+    }
+
+    button{
+        border-radius: 10px;
+        font-size: 1em;
+        padding: 10px;
+        margin: 40px auto;
+        color: variables.$white;
+        background-color: variables.$tangerine;
+        border: 2px solid variables.$tangerine;
+        font-weight: 500;
+        box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+
+        &:hover{
+            cursor: pointer;
+            color: variables.$tangerine;
+            background-color: variables.$white;
+            border: 2px solid variables.$tangerine;
+            border-radius: 60px;
+        }
+    }
+}

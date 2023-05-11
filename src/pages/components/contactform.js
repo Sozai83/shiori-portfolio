@@ -5,25 +5,23 @@ import axios from "axios";
 import Styles from '../../styles/home/ContactForm.module.scss'
 
 //Home page - Skills/Tech stack section
-export default function Contact() {
+export default function Contact({changeSubmitStatus}) {
     const [fname, setFname] = useState('');
     const [lname, setLname] = useState('');
     const [email, setEmail] = useState('');
     const [query, setQuery] = useState('');
-    const [submit, setSubmit] = useState(false);
 
     const submitHandler = (e)=>{
         e.preventDefault();
-        setSubmit(true);
-        if(submit){
             axios.defaults.headers.post['Content-Type'] = 'application/json';
-            axios.post('https://formsubmit.co/ajax/chikushi3.227@gmail.com', {
+            axios.post('https://formsubmit.co/ajax/chiku.dev@proton.me', {
                 name: "FormSubmit",
-                message: "I'm from Devro LABS"
+                message: "Form submitted successfully!"
             })
                 .then(response => console.log(response))
                 .catch(error => console.log(error));
-        }
+                changeSubmitStatus();
+
     }
 
 
