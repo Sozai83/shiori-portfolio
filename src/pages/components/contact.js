@@ -13,11 +13,6 @@ export default function Contact() {
   const changeSubmitStatus = ()=>{
     setSubmit(submit ? false : true);
   }
-
-  useEffect(()=>{
-    console.log(submit);
-  }, [submit])
-
   return (
     
     <section id="contact">

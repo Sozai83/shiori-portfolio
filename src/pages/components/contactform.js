@@ -16,8 +16,8 @@ export default function Contact({changeSubmitStatus}) {
             axios.defaults.headers.post['Content-Type'] = 'application/json';
             axios.post('https://formsubmit.co/ajax/chiku.dev@proton.me', {
                 name: `${fname} ${lname}`,
-                message: email,
-                query: query
+                email: email,
+                message: query
             })
                 .then(response => console.log(response))
                 .catch(error => console.log(error));
