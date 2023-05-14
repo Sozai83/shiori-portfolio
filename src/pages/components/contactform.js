@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from 'react';
+import Warning from './warning'
 import axios from "axios";
 import Styles from '../../styles/home/ContactForm.module.scss'
 
@@ -10,6 +11,7 @@ export default function Contact({changeSubmitStatus}) {
     const [lname, setLname] = useState('');
     const [email, setEmail] = useState('');
     const [query, setQuery] = useState('');
+    const [emailVal, setEamilVal] = useState(true);
 
     const submitHandler = (e)=>{
         e.preventDefault();
@@ -25,6 +27,34 @@ export default function Contact({changeSubmitStatus}) {
 
     }
 
+    const isEmpty = function(val){
+        return val.length == 0;
+    }
+
+    const fNameOnChangeHandler = function(e){
+        const fname = e.target.value;
+        if (fname.length < 50){
+            setFname(fname);
+        }
+    }
+
+    const lNameOnChangeHandler = function(e){
+        const lname = e.target.value;
+        if (lname.length < 50){
+            setLname(lname);
+        }
+    }
+
+    const emailOnChangeHandler = function(e){
+        const email = e.target.value;
+        setEmail(email);
+        if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email) || email.length == 0){
+            setEamilVal(true);
+        }else{
+            setEamilVal(false);
+        }
+    }
+
 
   return (
           <form className={Styles.form} onSubmit={submitHandler}>
@@ -32,6 +62,14 @@ export default function Contact({changeSubmitStatus}) {
             <input type="text" name="_honey" style={{'display': 'none'}}/>
             {/* disable captcha */}
             <input type="hidden" name="_captcha" value="false"/>
+            {(isEmpty(fname) || isEmpty(lname) || isEmpty(email) || isEmpty(query) || !emailVal) &&
+            <Warning 
+                isfName={isEmpty(fname)} 
+                islName={isEmpty(lname)} 
+                isEmail = {isEmpty(email)} 
+                isQuery = {isEmpty(query)}
+                emailVal={emailVal}/>
+            }
             <div className={Styles.name}>
                 <label for="fname">First Name: </label>
                 <input 
@@ -39,7 +77,7 @@ export default function Contact({changeSubmitStatus}) {
                     name="fname"
                     id="fname"
                     value={fname} 
-                    onChange={(e)=>{setFname(e.target.value)}} 
+                    onChange={fNameOnChangeHandler} 
                     required/>
 
                 <label for="lname">Last Name: </label>
@@ -48,7 +86,7 @@ export default function Contact({changeSubmitStatus}) {
                     name="lname" 
                     id="lname"
                     value={lname} 
-                    onChange={(e)=>{setLname(e.target.value)}} 
+                    onChange={lNameOnChangeHandler} 
                     required/>
             </div>
             <div className={Styles.email}>
@@ -58,7 +96,7 @@ export default function Contact({changeSubmitStatus}) {
                     name="email" 
                     id="email"
                     value={email} 
-                    onChange={(e)=>{setEmail(e.target.value)}} 
+                    onChange={emailOnChangeHandler} 
                     required/>
             </div>
             <div className={Styles.query}>
