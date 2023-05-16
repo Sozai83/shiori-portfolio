@@ -25,3 +25,6 @@ export default function Main() {
     </>
   )
 }
+// Check this tomorrow
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+// https://stackoverflow.com/questions/69566725/update-url-in-browser-while-scrolling-a-page-in-react
