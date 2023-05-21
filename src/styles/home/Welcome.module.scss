@@ -1,47 +1,58 @@
 @use '../variables';
 
-.wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    margin-top: 40px;
-    height: calc(100vh - 520px);
-
-    h1{
-        font-size: 3em;
-    }
-
-    .myName{
-        font-size: 4em;
-    }
-
-    p{
-        font-size: 1.4em;
-    }
+.bgcolor{
+    background: variables.$ivory;
 }
 
-.next{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.topWrapper{
+    display:flex;
+    flex-direction: column;
 
-    button{
-        border-radius: 10px;
-        font-size: 1em;
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         padding: 20px;
-        margin: 20px auto;
-        color: variables.$ivory;
-        background-color: variables.$tangerine;
-        border: 2px solid variables.$ivory;
-        font-weight: 500;
-        box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-
-        &:hover{
-            cursor: pointer;
-            color: variables.$tangerine;
-            background-color: variables.$ivory;
-            border: 2px solid variables.$tangerine;
+        margin-top: 40px;
+        height: calc(100vh - 520px);
+    
+        h1{
+            font-size: 3em;
+        }
+    
+        .myName{
+            font-size: 4em;
+        }
+    
+        p{
+            font-size: 1.4em;
         }
     }
+    
+    .next{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    
+        button{
+            border-radius: 10px;
+            font-size: 1em;
+            padding: 20px;
+            margin: 20px auto;
+            color: variables.$ivory;
+            background-color: variables.$tangerine;
+            border: 2px solid variables.$ivory;
+            font-weight: 500;
+            box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    
+            &:hover{
+                cursor: pointer;
+                color: variables.$tangerine;
+                background-color: variables.$ivory;
+                border: 2px solid variables.$tangerine;
+            }
+        }
+    }
+
 }
+

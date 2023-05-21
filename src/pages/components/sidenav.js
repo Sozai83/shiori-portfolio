@@ -7,25 +7,8 @@ import Styles from '../../styles/home/SideNav.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faKiwiBird, faEgg } from '@fortawesome/free-solid-svg-icons';
 
-const useLoaded = () => {
-    const [loaded, setLoaded] = useState(false);
-    useEffect(() => setLoaded(true), []);
-    return loaded;
-};
 
-export default function Nav() {
-    const router = useRouter();
-    const currentId = router.asPath.split("#")[1] || 'welcome';
-    const [active, setActive] = useState(currentId);
-
-    const useLoaded = () => {
-        const [loaded, setLoaded] = useState(false);
-        useEffect(() => setLoaded(true), []);
-        return loaded;
-    };
-
-    const loaded = useLoaded();
-
+export default function Nav({active, setActive}) {
     const sideNavigation = (el)=>{
         const element = el.target;
         const elementTag = element.tagName;
@@ -40,7 +23,6 @@ export default function Nav() {
     }
 
   return (
-    loaded &&
         <section id="side-navigation" className={Styles.sideNavSection}>
             <div className={Styles.wrapper}>
                 <nav id="sideNav" className={Styles.sideNav} onClick={sideNavigation}>

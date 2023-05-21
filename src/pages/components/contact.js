@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import {useState, useEffect} from 'react'
+import {useState, useEffect, forwardRef} from 'react'
 import ContactForm from './contactform'
 import Thankyou from './thankyou'
 import withWaveSection from '../wavelayout'
@@ -8,14 +8,14 @@ import Styles from '../../styles/home/Contact.module.scss'
 
 
 //Home page - Skills/Tech stack section
-export default function Contact() {
+const Contact = forwardRef(({}, ref) => {
   const [submit, setSubmit] = useState(false);
   const changeSubmitStatus = ()=>{
     setSubmit(submit ? false : true);
   }
   return (
     
-    <section id="contact">
+    <section id="contact" ref={ref}>
         <div className={Styles.wrapper}>
           <h1>
               Contact
@@ -32,4 +32,6 @@ export default function Contact() {
       
 
   )
-}
+})
+
+export default Contact;

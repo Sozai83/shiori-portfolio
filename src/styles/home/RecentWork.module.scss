@@ -1,93 +1,101 @@
 @use '../variables';
 
-.wrapper{
-    padding: 40px;
-    background-color: variables.$white;;
-    height: calc(100vh - 600px);
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+.bgcolor{
+    background: variables.$white;
+}
 
-    .descriptionWrapper{
-        width: 60%;
-        text-align: center;
-        align-self: center;
+.topWrapper{
+    display:flex;
+    flex-direction: column;
+    .wrapper{
+        padding: 40px;
+        background-color: variables.$white;;
+        height: calc(100vh - 600px);
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
 
-        h2{
-            margin-bottom: 20px;
-            font-size: 1.6em;
-        }
+        .descriptionWrapper{
+            width: 60%;
+            text-align: center;
+            align-self: center;
 
-        .desciption{
-            font-size: 1em;
-            margin: 0 auto;
-            width: 90%;
-            max-width: 600px;
-            padding: 40px 0;
-        }
-
-        .techStacks{
-            margin-bottom: 40px;
-            span{
-                padding: 6px 10px;
-                margin-right: 10px;
-                background: variables.$ivory;
-                border-radius: 5px;
-                box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-            }
-        }
-
-        a{
-            svg{
-                height: 40px;
-                margin-right: 10px;
-
-                &:hover{
-                    color: variables.$tangerine;
-                }
-            }
-
-            
-        }
-
-        .buttons{
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            button{
-                border-radius: 10px;
-                font-size: 1em;
-                padding: 10px 20px;
+            h2{
                 margin-bottom: 20px;
-                color: variables.$white;
-                background-color: variables.$tangerine;
-                border: 1px solid variables.$tangerine;
-                box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-                font-weight: 200;
-    
-                &:hover{
-                    cursor: pointer;
-                    color: variables.$tangerine;
-                    background-color: variables.$white;
-                    border-radius: 40px;
+                font-size: 1.6em;
+            }
+
+            .desciption{
+                font-size: 1em;
+                margin: 0 auto;
+                width: 90%;
+                max-width: 600px;
+                padding: 40px 0;
+            }
+
+            .techStacks{
+                margin-bottom: 40px;
+                span{
+                    padding: 6px 10px;
+                    margin-right: 10px;
+                    background: variables.$ivory;
+                    border-radius: 5px;
+                    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+                }
+            }
+
+            a{
+                svg{
+                    height: 40px;
+                    margin-right: 10px;
+
+                    &:hover{
+                        color: variables.$tangerine;
+                    }
+                }
+
+                
+            }
+
+            .buttons{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                button{
+                    border-radius: 10px;
+                    font-size: 1em;
+                    padding: 10px 20px;
+                    margin-bottom: 20px;
+                    color: variables.$white;
+                    background-color: variables.$tangerine;
+                    border: 1px solid variables.$tangerine;
+                    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+                    font-weight: 200;
+        
+                    &:hover{
+                        cursor: pointer;
+                        color: variables.$tangerine;
+                        background-color: variables.$white;
+                        border-radius: 40px;
+                    }
                 }
             }
         }
-    }
 
-    figure{
-        text-align: center;
-        align-self: center;
-        width: 40%;
-        img{
-            margin: 0 auto;
-            box-shadow: 0 0 5px rgba(182, 182, 182, 0.75);
+        figure{
+            text-align: center;
+            align-self: center;
+            width: 40%;
+            img{
+                margin: 0 auto;
+                box-shadow: 0 0 5px rgba(182, 182, 182, 0.75);
+            }
         }
-    }
 
-    svg{
-        background-color: #fff;
+        svg{
+            background-color: #fff;
+        }
     }
 }

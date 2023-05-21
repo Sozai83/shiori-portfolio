@@ -71,7 +71,7 @@ export default function Contact({changeSubmitStatus}) {
                 emailVal={emailVal}/>
             }
             <div className={Styles.name}>
-                <label for="fname">First Name: </label>
+                <label htmlFor="fname">First Name: </label>
                 <input 
                     type="text" 
                     name="fname"
@@ -80,7 +80,7 @@ export default function Contact({changeSubmitStatus}) {
                     onChange={fNameOnChangeHandler} 
                     required/>
 
-                <label for="lname">Last Name: </label>
+                <label htmlFor="lname">Last Name: </label>
                 <input                    
                     type="text" 
                     name="lname" 
@@ -90,7 +90,7 @@ export default function Contact({changeSubmitStatus}) {
                     required/>
             </div>
             <div className={Styles.email}>
-                <label for="email">Email: </label>
+                <label htmlFor="email">Email: </label>
                 <input
                     type="email" 
                     name="email" 
@@ -100,7 +100,7 @@ export default function Contact({changeSubmitStatus}) {
                     required/>
             </div>
             <div className={Styles.query}>
-                <label for="query">Questions: </label>
+                <label htmlFor="query">Questions: </label>
                 <textarea
                     type="query" 
                     name="query" 
