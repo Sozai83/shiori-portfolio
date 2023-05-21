@@ -42,9 +42,7 @@ export default function Main() {
               window.history.replaceState(null, '', `/#${tempId}`);
             }else{
               window.history.replaceState(null, '', '');
-              router.replace('').then(() => router.replace(''));
             }
-            
           }
       });
     }, options);
