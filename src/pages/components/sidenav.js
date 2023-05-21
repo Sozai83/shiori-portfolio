@@ -28,22 +28,38 @@ export default function Nav({active, setActive}) {
                 <nav id="sideNav" className={Styles.sideNav} onClick={sideNavigation}>
                     <ul className={Styles.navList}>
                         <li id="sidenav-welcome">
-                            <Link id="sidenavlink-welcome" href="#welcome">
+                            <Link 
+                                id="sidenavlink-welcome"
+                                href="#welcome"
+                                smooth="true"
+                            >
                                 <FontAwesomeIcon icon={active == "welcome" ? faKiwiBird : faEgg} />
                             </Link>
                         </li>
                         <li id="sidenav-project">
-                            <Link id="sidenavlink-recentwork" href="#recentwork">
+                            <Link 
+                                id="sidenavlink-recentwork"
+                                href="#recentwork"
+                                smooth="true"
+                            >
                                 <FontAwesomeIcon icon={active == "recentwork" ? faKiwiBird : faEgg} />
                             </Link>
                         </li>
                         <li id="sidenav-shortaboutme">
-                            <Link id="sidenavlink-shortaboutme" href="#shortaboutme">
+                            <Link 
+                                id="sidenavlink-shortaboutme"
+                                href="#shortaboutme"
+                                smooth="true"
+                            >
                                 <FontAwesomeIcon icon={active == "shortaboutme" ? faKiwiBird : faEgg} />
                             </Link>
                         </li>
                         <li id="sidenav-contact">
-                            <Link id="sidenavlink-contact" href="#contact">
+                            <Link 
+                                id="sidenavlink-contact"
+                                href="#contact"
+                                smooth="true"
+                            >
                                 <FontAwesomeIcon icon={active == "contact"  ? faKiwiBird : faEgg} />
                             </Link>
                         </li>

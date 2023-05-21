@@ -22,11 +22,10 @@ export default function Main() {
   const router = useRouter();
   
   const [active, setActive] = useState('welcome');
-  const [welcomeEntered, setWelcomeEntered] = useState();
 
   let options = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "40px",
     threshold: 0.8,
   };
 
@@ -39,11 +38,14 @@ export default function Main() {
           if(entry.isIntersecting){
             const tempId = entry.target.id;
             setActive(tempId);
+            if(tempId !== 'welcome'){
+              window.history.replaceState(null, '', `/#${tempId}`);
+            }else{
+              window.history.replaceState(null, '', '');
+              router.replace('').then(() => router.replace(''));
+            }
+            
           }
-          console.log(entry, 'Entered!');
-          setWelcomeEntered(entry.isIntersecting);
-          console.log(welcomeEntered);
-          console.log(entry.isIntersecting);
       });
     }, options);
     observer.observe(welcome.current);

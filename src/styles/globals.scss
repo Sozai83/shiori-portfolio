@@ -11,6 +11,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-size: 18px;
+  scroll-behavior: smooth;
+  transition-duration: 500ms;
 }
 
 body {
