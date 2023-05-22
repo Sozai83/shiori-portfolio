@@ -13,9 +13,9 @@ export default function Footer() {
     <section id="footer">
       <div className={Styles.wrapper}>
         <ul>
-          <li><Link href=""><FontAwesomeIcon icon={faGithubSquare} /></Link></li>
-          <li><Link href=""><FontAwesomeIcon icon={faLinkedin} /></Link></li>
-          <li><Link href=""><FontAwesomeIcon icon={faTwitterSquare} /></Link></li>          
+          <li><Link href="https://github.com/Sozai83"><FontAwesomeIcon icon={faGithubSquare} /></Link></li>
+          <li><Link href="https://www.linkedin.com/in/shiori-chiku/"><FontAwesomeIcon icon={faLinkedin} /></Link></li>
+          <li><Link href="https://twitter.com/DevShiori"><FontAwesomeIcon icon={faTwitterSquare} /></Link></li>          
         </ul>
         <p>&copy; Copyright {currentYear}, Shiori Chiku</p>
       </div>
