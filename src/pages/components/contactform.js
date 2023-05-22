@@ -4,6 +4,8 @@ import {useState} from 'react';
 import Warning from './warning'
 import axios from "axios";
 import Styles from '../../styles/home/ContactForm.module.scss'
+import { Elsie_Swash_Caps } from 'next/font/google';
+import { faSleigh } from '@fortawesome/free-solid-svg-icons';
 
 //Home page - Skills/Tech stack section
 export default function Contact({changeSubmitStatus}) {
@@ -12,9 +14,13 @@ export default function Contact({changeSubmitStatus}) {
     const [email, setEmail] = useState('');
     const [query, setQuery] = useState('');
     const [emailVal, setEamilVal] = useState(true);
+    const [entered, setEntered] = useState(false);
 
     const submitHandler = (e)=>{
         e.preventDefault();
+        setEntered(true);
+        const emptyMandatory = isEmpty([fname,lname,email,query]);
+        if(!emptyMandatory && emailVal){
             axios.defaults.headers.post['Content-Type'] = 'application/json';
             axios.post('https://formsubmit.co/ajax/chiku.dev@proton.me', {
                 name: `${fname} ${lname}`,
@@ -24,11 +30,20 @@ export default function Contact({changeSubmitStatus}) {
                 .then(() => console.log('Form submitted successfully'))
                 .catch(error => console.log(error));
             changeSubmitStatus();
-
+        }
     }
 
-    const isEmpty = function(val){
-        return val.length == 0;
+    const isEmpty = function(arr){
+        let empty;
+        arr.forEach(i => {
+            if(i.length > 0){
+                empty = false;
+            }else{
+                empty = true;
+                return empty;
+            }
+        })
+        return empty;
     }
 
     const fNameOnChangeHandler = function(e){
@@ -58,17 +73,22 @@ export default function Contact({changeSubmitStatus}) {
 
   return (
           <form className={Styles.form} onSubmit={submitHandler}>
+            <h3>
+            Please fill all the field below.
+            </h3>
             {/* honepot */}
             <input type="text" name="_honey" style={{'display': 'none'}}/>
             {/* disable captcha */}
             <input type="hidden" name="_captcha" value="false"/>
-            {(isEmpty(fname) || isEmpty(lname) || isEmpty(email) || isEmpty(query) || !emailVal) &&
+            {((entered && isEmpty([fname,lname,email,query])) || !emailVal) &&
             <Warning 
-                isfName={isEmpty(fname)} 
-                islName={isEmpty(lname)} 
-                isEmail = {isEmpty(email)} 
-                isQuery = {isEmpty(query)}
-                emailVal={emailVal}/>
+                isfName={isEmpty([fname])} 
+                islName={isEmpty([lname])} 
+                isEmail = {isEmpty([email])} 
+                isQuery = {isEmpty([query])}
+                emailVal={emailVal}
+                entered={entered}
+            />
             }
             <div className={Styles.name}>
                 <label htmlFor="fname">First Name: </label>
@@ -78,7 +98,7 @@ export default function Contact({changeSubmitStatus}) {
                     id="fname"
                     value={fname} 
                     onChange={fNameOnChangeHandler} 
-                    required/>
+                    />
 
                 <label htmlFor="lname">Last Name: </label>
                 <input                    
@@ -87,7 +107,7 @@ export default function Contact({changeSubmitStatus}) {
                     id="lname"
                     value={lname} 
                     onChange={lNameOnChangeHandler} 
-                    required/>
+                    />
             </div>
             <div className={Styles.email}>
                 <label htmlFor="email">Email: </label>
@@ -97,7 +117,7 @@ export default function Contact({changeSubmitStatus}) {
                     id="email"
                     value={email} 
                     onChange={emailOnChangeHandler} 
-                    required/>
+                    />
             </div>
             <div className={Styles.query}>
                 <label htmlFor="query">Questions: </label>
@@ -107,7 +127,7 @@ export default function Contact({changeSubmitStatus}) {
                     id="query"
                     value={query} 
                     onChange={(e)=>{setQuery(e.target.value)}} 
-                    required/>
+                    />
             </div>
             <button type="submit">Contact Shiori</button>
           </form>

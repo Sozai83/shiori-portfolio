@@ -2,13 +2,13 @@ import Styles from '../../styles/warning.module.scss'
 
 
 //Home page - Skills/Tech stack section
-export default function Warning({isfName, islName, isEmail, isQuery, emailVal}) {
+export default function Warning({isfName, islName, isEmail, isQuery, emailVal, entered}) {
   return (
     <section className={Styles.warning}>
         {!emailVal &&
         (<p>Please enter valid email address.</p>)
         }
-        { (isfName || islName || isEmail || isQuery) &&
+        { ((isfName || islName || isEmail || isQuery) && entered) &&
             (
                 <>
                 <p>The following field(s) are mandatory:</p>

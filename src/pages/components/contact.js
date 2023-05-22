@@ -20,9 +20,6 @@ const Contact = forwardRef(({}, ref) => {
           <h1>
               Contact
           </h1>
-          <h3>
-            Please fill all the field below.
-          </h3>
           {submit && <Thankyou  changeSubmitStatus={changeSubmitStatus}/>}
           {!submit &&
           <ContactForm changeSubmitStatus={changeSubmitStatus} />
