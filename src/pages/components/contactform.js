@@ -18,7 +18,7 @@ export default function Contact({changeSubmitStatus}) {
         e.preventDefault();
         setEntered(true);
         const emptyMandatory = isEmpty([fname,lname,email,query]);
-        if(!emptyMandatory && emailVal){
+        if(!emptyMandatory && emailValidation(email)){
             axios.defaults.headers.post['Content-Type'] = 'application/json';
             axios.post('https://formsubmit.co/ajax/chiku.dev@proton.me', {
                 name: `${fname} ${lname}`,
@@ -44,6 +44,13 @@ export default function Contact({changeSubmitStatus}) {
         return empty;
     }
 
+    const emailValidation = function(email){
+        if(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email) || email.length == 0){
+            return true;
+        }
+        return false;
+    }
+
     const fNameOnChangeHandler = function(e){
         const fname = e.target.value;
         if (fname.length < 50){
@@ -61,7 +68,7 @@ export default function Contact({changeSubmitStatus}) {
     const emailOnChangeHandler = function(e){
         const email = e.target.value;
         setEmail(email);
-        if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email) || email.length == 0){
+        if (emailValidation(email)){
             setEamilVal(true);
         }else{
             setEamilVal(false);
