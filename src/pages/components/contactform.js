@@ -4,8 +4,6 @@ import {useState} from 'react';
 import Warning from './warning'
 import axios from "axios";
 import Styles from '../../styles/home/ContactForm.module.scss'
-import { Elsie_Swash_Caps } from 'next/font/google';
-import { faSleigh } from '@fortawesome/free-solid-svg-icons';
 
 //Home page - Skills/Tech stack section
 export default function Contact({changeSubmitStatus}) {

@@ -2,10 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {forwardRef} from 'react'
 import withWaveSection from '../wavelayout'
+import Typewriter from 'typewriter-effect';
 import Styles from '../../styles/home/Welcome.module.scss'
 
 const Welcome = forwardRef(({ name }, ref) => {
   const tempName = name ? name : "world";
+  const shioriIdentifier = [
+    'a web developer',
+    'a problem solver',
+    'a creator',
+    'a challenger'
+  ]
 
   return (
     <section id="welcome" ref={ref} className={`${Styles.bgcolor} ${Styles.topWrapper}`}>
@@ -16,8 +23,16 @@ const Welcome = forwardRef(({ name }, ref) => {
             Shiori Chiku
           </h1>
           <p>I'm a developer who likes to create things with code!</p>
-          <p>I am...</p>
-          <p></p>
+          <section className={Styles.typeWriter}>
+          <p>I am</p>
+            <Typewriter
+              options={{
+                strings: shioriIdentifier,
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </section>
         </section>
         <figure>
           <img src="/chikku.png" alt="test" width="300" height="300"></img>
