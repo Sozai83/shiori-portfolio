@@ -32,13 +32,10 @@ export default function Contact({changeSubmitStatus}) {
     }
 
     const isEmpty = function(arr){
-        let empty;
+        let empty = true;
         arr.forEach(i => {
-            if(i.length > 0){
-                empty = false;
-            }else{
+            if(i.length == 0){
                 empty = true;
-                return empty;
             }
         })
         return empty;
