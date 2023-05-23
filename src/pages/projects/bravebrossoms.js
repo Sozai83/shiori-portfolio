@@ -61,7 +61,7 @@ function projectCards() {
         <div className={Styles.wrapper}>
           <figure>
             <img
-              src="/projects_img/Braveblossom_Details/planning.JPG"
+              src="/projects_img/Braveblossom_Details/planning.jpg"
               alt="Chikku Webdesign Logo"
               className={Styles.logo}
             />
@@ -154,7 +154,7 @@ function projectCards() {
         <div className={Styles.wrapper}>
           <figure>
             <img
-              src="/projects_img/Braveblossom_Details/testing.JPG"
+              src="/projects_img/Braveblossom_Details/testing.jpg"
               alt="Chikku Webdesign Logo"
               className={Styles.logo}
             />
