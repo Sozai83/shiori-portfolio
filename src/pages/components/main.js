@@ -25,14 +25,17 @@ export default function Main() {
 
   let options = {
     root: null,
-    rootMargin: "40px",
-    threshold: 0.8,
+    rootMargin: "0px",
+    threshold: 0.9,
   };
 
 
   useEffect(()=>{
+    //set currentId as id in the URL or welcome
     const currentId = router.asPath.split("#")[1] || 'welcome';
+    //set active section as id in the URL
     setActive(currentId);
+  
     const observer = new IntersectionObserver((entries)=>{
         entries.forEach((entry) => {
           if(entry.isIntersecting){
