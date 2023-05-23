@@ -1,5 +1,17 @@
 @use 'variables';
 
+.ivory{
+    background-color: variables.$ivory;
+}
+
+.white{
+    background-color: variables.$white;
+}
+
+.pewter{
+    background-color: variables.$pewter;
+}
+
 .wrapper{
     padding: 20px;
     text-align: center;

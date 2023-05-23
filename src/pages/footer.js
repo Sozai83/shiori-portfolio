@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithubSquare , faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
 
 
-export default function Footer() {
+export default function Footer({bgcolor}) {
   const today = new Date();
   const currentYear = today.getFullYear();
   return (
-    <section id="footer">
+    <section id="footer" className={Styles[bgcolor || 'ivory']}>
       <div className={Styles.wrapper}>
         <ul>
           <li><Link href="https://github.com/Sozai83"><FontAwesomeIcon icon={faGithubSquare} /></Link></li>

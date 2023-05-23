@@ -11,6 +11,17 @@
             margin-top: 20px;
             text-align: center;
         }
+
+        figure{
+            margin: 20px auto;
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+                box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+            }
+            
+        }
     
         .topDesciption{
             width: 80%;
@@ -18,13 +29,13 @@
             text-align: center;
             font-size: 1.2em;
         }
-    
     }
 
     .wrapper{
         padding: 20px 40px;
         background-color: #fff;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 20px;
     
@@ -41,7 +52,7 @@
         
                 h2{
                     font-size: 1.4em;
-                    text-align: left;
+                    text-align: center;
                     margin-bottom: 20px;
                 }
 
@@ -57,21 +68,31 @@
     
             .techStacks{
                 margin-bottom: 40px;
-                span{
-                    padding: 6px 10px;
-                    margin-right: 10px;
-                    background: variables.$ivory;
-                    border-radius: 5px;
-                    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 20px 0;
+
+                    li{
+                        padding: 6px 10px;
+                        margin-right: 10px;
+                        background: variables.$ivory;
+                        border-radius: 5px;
+                        box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+                    }
+
                 }
+                
             }
         }
     
         figure{
             align-self: center;
+            width: 40%;
             img{
                 margin: 0 auto;
-                box-shadow: 0 0 5px rgba(182, 182, 182, 0.75);
+                display: block;
+                width: 80%;
             }
         }
     
@@ -95,8 +116,11 @@
 
     .buttons{
         margin-top: 20px;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
         
         button{
             border-radius: 10px;
