@@ -18,7 +18,7 @@ const ShortAboutMe = forwardRef(({}, ref) => {
         <div className={Styles.wrapper}>
           <figure>
               <img
-                src="/shiori-img.png"
+                src="/shiori_img.png"
                 alt="Chikku Webdesign Logo"
                 className={Styles.logo}
               />
