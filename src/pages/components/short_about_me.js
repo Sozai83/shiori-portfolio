@@ -26,8 +26,9 @@ const ShortAboutMe = forwardRef(({}, ref) => {
           <div className={Styles.descriptionWrapper}>
             <h2>A little about me...</h2>
             <div className={Styles.desciption}>
-              I am a software divelopper who likes to create things with code.<br/>
-              
+              I am a passionated software divelopper who likes to create things with code.<br/>
+              I enjoy the process of finding the solutions and creating an application.<br/>
+              Based in Melbourne, Australia.
             </div>
             <div className={Styles.skills}>
               <h3>Professional Skillset</h3>

@@ -1,0 +1,13 @@
+@use '../variables';
+
+.techStack{
+    h2, h3{
+        margin: 20px 0;
+    }
+    ul{
+        display: flex;
+        li{
+            margin-right: 10px;
+        }
+    }
+}

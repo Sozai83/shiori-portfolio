@@ -1,0 +1,20 @@
+@use '../variables';
+
+    .introduction{
+        .description{
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            div{
+                width: 60%;
+            }
+            figure{
+                width: 40%;
+                img{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
