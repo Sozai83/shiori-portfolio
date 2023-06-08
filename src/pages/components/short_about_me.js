@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {forwardRef} from 'react'
-import withWaveSection from '../wavelayout'
 import Styles from '../../styles/home/ShortAboutMe.module.scss'
 
 //Home page - Skills/Tech stack section
@@ -14,7 +13,7 @@ const ShortAboutMe = forwardRef(({}, ref) => {
       ref={ref}
       className={`${Styles.bgcolor} ${Styles.topWrapper}`}
     >
-      <section ref={ref}>
+      <section>
         <div className={Styles.wrapper}>
           <figure>
               <img

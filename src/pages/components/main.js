@@ -26,7 +26,7 @@ export default function Main() {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.9,
+    threshold: 0.25,
   };
 
 
@@ -40,11 +40,12 @@ export default function Main() {
         entries.forEach((entry) => {
           if(entry.isIntersecting){
             const tempId = entry.target.id;
+            console.log(tempId);
             setActive(tempId);
             if(tempId !== 'welcome'){
               window.history.replaceState(null, '', `/#${tempId}`);
             }else{
-              window.history.replaceState(null, '', '');
+              window.history.replaceState(null, '', '/');
             }
           }
       });
