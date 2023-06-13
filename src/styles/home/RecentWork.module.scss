@@ -19,16 +19,27 @@
         @media only screen and (max-width: 800px) {
             flex-direction: column-reverse;
             min-height: 960px;
+            padding: 20px;
         }
 
         .descriptionWrapper{
             width: 60%;
+            margin-left: 40px;
             text-align: center;
             align-self: center;
+
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+                margin-left: 0px;
+            }
 
             h2{
                 margin-bottom: 20px;
                 font-size: 1.6em;
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 1.4em;
+                }
             }
 
             .desciption{
@@ -79,6 +90,10 @@
                     border: 1px solid variables.$tangerine;
                     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
                     font-weight: 200;
+
+                    @media only screen and (max-width: 800px) {
+                        font-size: 1.2em;
+                    }
         
                     &:hover{
                         cursor: pointer;

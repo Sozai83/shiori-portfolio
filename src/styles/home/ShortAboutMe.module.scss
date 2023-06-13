@@ -15,12 +15,22 @@
         max-width: 1200px;
         margin: 0 auto;
 
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+            min-height: 960px;
+            padding: 20px;
+        }
+
         .descriptionWrapper{
             width: 60%;
             text-align: left;
             align-self: center;
             padding: 0 40px;
             margin: 0 auto;
+
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+            }
 
             h2{
                 margin-bottom: 20px;
@@ -45,6 +55,13 @@
                         background: variables.$white;
                         border-radius: 5px;
                         box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+                    }
+
+                    @media only screen and (max-width: 1200px) {
+                        flex-wrap: wrap;
+                        span{
+                            margin-bottom: 10px;
+                        }
                     }
 
                 }
@@ -86,6 +103,15 @@
                         border-radius: 40px;
                     }
                 }
+
+                @media only screen and (max-width: 800px) {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    button{
+                        font-size: 1.2em;
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
 
@@ -97,6 +123,10 @@
             img{      
                 margin: 0 auto;
                 width: 80%;
+                max-width: 400px;
+            }
+            @media only screen and (max-width: 800px) {
+                width: 100%;
             }
         }
 
