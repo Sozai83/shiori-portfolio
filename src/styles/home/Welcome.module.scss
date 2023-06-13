@@ -21,29 +21,58 @@
         -moz-animation: fadeIn ease 3s;
         -o-animation: fadeIn ease 3s;
         -ms-animation: fadeIn ease 3s;
-    
-        h1{
-            font-size: 3em;
-        }
-    
-        .myName{
-            font-size: 4em;
-        }
-    
-        p{
-            font-size: 1.4em;
+
+        @media only screen and (max-width: 800px) {
+          flex-direction:column;
         }
 
-        .typeWriter{
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            margin-top: 20px;
-            span{
-                margin-left: 10px;
-                font-size: 1.4em;
+        section{
+          padding-left: 40px;
+          h1{
+            font-size: 3em;
+            @media only screen and (max-width: 660px) {
+              font-size: 2em;
             }
-            
+          }
+      
+          .myName{
+              font-size: 4em;
+              @media only screen and (max-width: 660px) {
+                font-size: 2.4em;
+              }
+          }
+      
+          p{
+              font-size: 1.4em;
+          }
+
+          .typeWriter{
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              margin-top: 20px;
+              span{
+                  margin-left: 10px;
+                  font-size: 1.4em;
+              }
+              
+          }
+        }
+        
+        figure{
+          width: 30%;
+
+          @media only screen and (max-width: 1200px) {
+            width: 20%;
+            img{
+              width: 180px;
+              height: 200px;
+            }
+          }
+          @media only screen and (max-width: 800px) {
+            width: 100%;
+            text-align: center;
+          }
         }
     }
     
@@ -62,6 +91,10 @@
             border: 2px solid variables.$ivory;
             font-weight: 500;
             box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+
+            @media only screen and (max-width: 660px) {
+              font-size: 1.2em;
+            }
     
             &:hover{
                 cursor: pointer;

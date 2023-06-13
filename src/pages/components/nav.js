@@ -17,7 +17,7 @@ export default function Nav({bgcolor}) {
                     <Image src='/chikku_logo.png' alt="Chikku Webdesign Logo" className={Styles.logo} width={160} height={100}/>
                 </Link>  
             </figure>
-            <nav id="topNav" className={Styles.topNav}>
+            <nav id="deskToptNav" className={`${Styles.topNav} ${Styles.deskToptNav}`}>
                 <ul ref={topNavUl} className={Styles.navList}>
                     <li id="topnav-home" className={ router.pathname == "/" ? Styles.active : ""}><Link  href="/">Home</Link></li>
                     <li id="topnav-about" className={ router.pathname == "/about" ? Styles.active : ""}><Link href="/about">About</Link></li>
