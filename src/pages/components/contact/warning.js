@@ -1,4 +1,4 @@
-import Styles from '../../styles/warning.module.scss'
+import Styles from '../../../styles/warning.module.scss'
 
 
 //Home page - Skills/Tech stack section

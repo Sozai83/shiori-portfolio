@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState, useEffect, forwardRef} from 'react'
-import ContactForm from './contactform'
-import Thankyou from './thankyou'
+import ContactForm from './contact/contactform'
+import Thankyou from './contact/thankyou'
 import withWaveSection from '../wavelayout'
 import Styles from '../../styles/home/Contact.module.scss'
 

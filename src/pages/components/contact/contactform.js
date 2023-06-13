@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {useState} from 'react';
 import Warning from './warning'
 import axios from "axios";
-import Styles from '../../styles/home/ContactForm.module.scss'
+import Styles from '../../../styles/home/ContactForm.module.scss'
 
 //Home page - Skills/Tech stack section
 export default function Contact({changeSubmitStatus}) {

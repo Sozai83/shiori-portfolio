@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { useRouter } from "next/router"
 import Nav from './nav'
-import SideNav from './sidenav'
-import Welcome from './welcome'
-import RecentWork from './recentWork'
-import ShortAboutMe from './short_about_me'
+import SideNav from './main/sidenav'
+import Welcome from './main/welcome'
+import RecentWork from './main/recentWork'
+import ShortAboutMe from './main/short_about_me'
 import Contact from './contact'
 import Footer from '../footer'
 import { Inter } from 'next/font/google'
@@ -26,7 +26,7 @@ export default function Main() {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.8,
+    threshold: 0.5,
   };
 
 

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {forwardRef} from 'react'
-import Styles from '../../styles/home/ShortAboutMe.module.scss'
+import Styles from '../../../styles/home/ShortAboutMe.module.scss'
 
 //Home page - Skills/Tech stack section
 const ShortAboutMe = forwardRef(({}, ref) => {
