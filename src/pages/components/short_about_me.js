@@ -47,7 +47,7 @@ const ShortAboutMe = forwardRef(({}, ref) => {
               </div>
             </div>
             <div className={Styles.buttons}>
-              <Link href="/about">
+              <Link href="/about#introduction">
                 <button>Learn more about me</button>
               </Link>
               <a href={resume} target="_blank" download>

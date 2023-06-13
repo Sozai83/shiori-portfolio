@@ -5,12 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Styles from '../../styles/Nav.module.scss'
 
-export default function Nav() {
+export default function Nav({bgcolor}) {
     const topNavUl = useRef();
     const router = useRouter();
 
   return (
-    <section id="top-navigation">
+    <section id="top-navigation" className={Styles[bgcolor]}>
         <div className={Styles.wrapper}>
             <figure>
                 <Link href='/'>

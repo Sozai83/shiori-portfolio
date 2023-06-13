@@ -1,5 +1,14 @@
 @use 'variables';
 
+.white{
+    background-color: variables.$white;
+}
+
+.pewter{
+    background-color: variables.$pewter;
+}
+
+
 .wrapper{
     display: flex;
     justify-content: space-between;

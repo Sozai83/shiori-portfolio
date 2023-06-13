@@ -26,7 +26,7 @@ export default function Main() {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.25,
+    threshold: 0.8,
   };
 
 
@@ -77,6 +77,3 @@ export default function Main() {
     </>
   )
 }
-// Check this tomorrow
-// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-// https://stackoverflow.com/questions/69566725/update-url-in-browser-while-scrolling-a-page-in-react

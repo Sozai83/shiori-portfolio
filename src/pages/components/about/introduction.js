@@ -4,7 +4,7 @@ import Styles from '../../../styles/about/Introduction.module.scss'
 
 export default function Introduction() {
   return (
-            <section className={Styles.introduction}>
+            <section className={Styles.introduction} id="introduction">
               <h1>Hi There,</h1>
               <h1>Thanks again for visiting my portfolio!</h1>
               <h2>Here's a bit more about me...</h2>
