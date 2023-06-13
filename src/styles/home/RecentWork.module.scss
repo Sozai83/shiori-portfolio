@@ -16,6 +16,11 @@
         max-width: 1200px;
         margin: 0 auto;
 
+        @media only screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+            min-height: 960px;
+        }
+
         .descriptionWrapper{
             width: 60%;
             text-align: center;
@@ -92,6 +97,28 @@
             img{
                 margin: 0 auto;
                 box-shadow: 0 0 5px rgba(182, 182, 182, 0.75);
+            }
+            
+            @media only screen and (max-width: 1200px) {
+                width: 30%;
+                margin: 0 auto;
+
+                img{
+                    width: 320px;
+                    height: 300px;
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+
+                img{
+                    width: 280px;
+                    height: 260px;
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+                width: 100%;
             }
         }
 
