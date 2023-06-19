@@ -61,9 +61,47 @@
         }
     }
 
+    &.mobNav{
+        display: none;
+    }
+
     @media only screen and (max-width: 760px){
+
         &.deskToptNav{
             display:none;
         }
+
+        &.mobNav{
+            display: inline-block;
+            position: relative;
+
+            .mobNavList{
+                // display: none;
+                position: absolute;
+                top: 40px;
+                right: 0px;
+                background-color: variables.$ivory;
+                padding: 20px 60px;
+
+                li{
+                    padding: 4px;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    text-align: center;
+                    border-bottom: variables.$tangerine 1px dotted;
+        
+                    a{
+                        width: 100%;
+                        color: variables.$tangerine;
+
+                        &:hover{
+                            color: variables.$pewter;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

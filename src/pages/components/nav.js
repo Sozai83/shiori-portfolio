@@ -25,6 +25,23 @@ export default function Nav({bgcolor}) {
                     <li id="topnav-contact" className={ router.pathname == "/contact" ? Styles.active : ""}><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>
+            <nav id="mobileNav" className={`${Styles.topNav} ${Styles.mobNav}`}>
+                <button>Open</button>
+                <ul className={Styles.mobNavList}>
+                    <li>
+                        <Link  href="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link  href="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link  href="/projects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link  href="/contact">Contact</Link>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
     
