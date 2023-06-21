@@ -83,6 +83,53 @@
             display: inline-block;
             position: relative;
 
+            button{
+                border: none;
+                background: none;
+            }
+
+            .humburgerMenu{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 36px;
+              
+                span{
+                    display: block;
+                    height: 4px;
+                    width: 100%;
+                    margin-bottom: 4px;
+                    border-radius: 10px;
+                    background: #0e2431;
+                }
+
+                .humburgerLine1{
+                    transform-origin: 0% 0%;
+                    transition: transform 0.4s ease-in-out;
+                    
+                    &.close{
+                        transform: rotate(45deg);
+                    }
+                }
+
+                .humburgerLine2{
+                    transition: transform 0.2s ease-in-out;
+                    
+                    &.close{
+                        transform: scaleY(0);
+                    }
+                }
+
+                .humburgerLine3{
+                    transform-origin: 0% 100%;
+                    transition: transform 0.4s ease-in-out;
+
+                    &.close{
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
             .mobNavList{
                 position: absolute;
                 top: 40px;

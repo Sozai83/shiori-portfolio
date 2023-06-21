@@ -30,7 +30,13 @@ export default function Nav({bgcolor}) {
                 </ul>
             </nav>
             <nav id="mobileNav" className={`${Styles.topNav} ${Styles.mobNav}`}>
-                <button onClick={mobNavHandler}>Menu</button>
+                <button onClick={mobNavHandler}>
+                    <div className={Styles.humburgerMenu}>
+                        <span className={`${Styles.humburgerLine1} ${showMobNav ? Styles.close : ''}`}></span>
+                        <span className={`${Styles.humburgerLine2} ${showMobNav ? Styles.close : ''}`}></span>
+                        <span className={`${Styles.humburgerLine3} ${showMobNav ? Styles.close : ''}`}></span>
+                    </div>
+                </button>
                 <ul 
                 className=
                 {`${Styles.mobNavList} 
