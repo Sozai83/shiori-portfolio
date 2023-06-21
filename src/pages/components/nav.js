@@ -8,6 +8,10 @@ import Styles from '../../styles/Nav.module.scss'
 export default function Nav({bgcolor}) {
     const topNavUl = useRef();
     const router = useRouter();
+    const [showMobNav, setShowMobNav] = useState(false);
+    const mobNavHandler = function(){
+        setShowMobNav(showMobNav ? false : true);
+    }
 
   return (
     <section id="top-navigation" className={Styles[bgcolor]}>
@@ -26,8 +30,11 @@ export default function Nav({bgcolor}) {
                 </ul>
             </nav>
             <nav id="mobileNav" className={`${Styles.topNav} ${Styles.mobNav}`}>
-                <button>Open</button>
-                <ul className={Styles.mobNavList}>
+                <button onClick={mobNavHandler}>Menu</button>
+                <ul 
+                className=
+                {`${Styles.mobNavList} 
+                ${showMobNav ? Styles.show : Styles.hidden}`}>
                     <li>
                         <Link  href="/">Home</Link>
                     </li>

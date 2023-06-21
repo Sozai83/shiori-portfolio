@@ -76,12 +76,15 @@
             position: relative;
 
             .mobNavList{
-                // display: none;
                 position: absolute;
                 top: 40px;
                 right: 0px;
                 background-color: variables.$ivory;
                 padding: 20px 60px;
+
+                &.hidden{
+                    display: none;
+                }
 
                 li{
                     padding: 4px;
