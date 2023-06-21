@@ -15,12 +15,20 @@
     padding: 20px;
 
     figure{
-
         width: 20%;
         .logo{
-            width: 80% !important;
-            max-width: 180px;
+            max-width: 170px;
             max-height: 70px;
+
+            @media only screen and (max-width: 800px){
+                max-width: 140px;
+                max-height: 50px;
+            }
+
+            @media only screen and (max-width: 660px){
+                max-width: 120px;
+                max-height: 40px;
+            }
         }
     }
     
