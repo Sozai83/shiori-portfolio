@@ -52,7 +52,7 @@ const RecentWork = forwardRef(({}, ref) => {
           </div>
           <div className={Styles.buttons}>
             <Link href="/projects/bravebrossoms">
-              <button>See Project</button>
+              <button>See Project details</button>
             </Link>
             <Link href="/projects">
               <button>Check other projects</button>
@@ -63,7 +63,7 @@ const RecentWork = forwardRef(({}, ref) => {
           <Link href="/projects">
             <Image
               src="/projects_img/Braveblossom_Top.JPG"
-              alt="Chikku Webdesign Logo"
+              alt="Brave Blossom Top Page Sample Image"
               className={Styles.logo}
               width={440}
               height={400}
