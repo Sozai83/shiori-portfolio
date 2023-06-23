@@ -41,11 +41,16 @@ function projectCards() {
             </a>
           </section>
           <figure>
-            <img
-              src="/projects_img/Braveblossom_Top.JPG"
-              alt="Chikku Webdesign Logo"
-              className={Styles.logo}
-            />
+            <a
+              target="_blank"
+              href="https://brave-blossoms-portal.netlify.app/"
+            >
+              <img
+                src="/projects_img/Braveblossom_Top.JPG"
+                alt="Chikku Webdesign Logo"
+                className={Styles.logo}
+              />
+            </a>
           </figure>
           <section className={Styles.topDesciption}>
             <p>

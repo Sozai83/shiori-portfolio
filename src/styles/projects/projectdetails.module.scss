@@ -44,6 +44,11 @@
             text-align: left;
             font-size: 1em;
             margin: 0 auto;
+
+            @media only screen and (max-width: 660px) {
+                width: 100%;
+                text-align: center;
+            }
     
             .descriptionWrapper{
                 padding: 0px 20px;
@@ -73,6 +78,10 @@
                     flex-direction: row;
                     margin: 20px 0;
 
+                    @media only screen and (max-width: 660px) {
+                        justify-content: center;
+                    }
+
                     li{
                         padding: 6px 10px;
                         margin-right: 10px;
@@ -93,6 +102,10 @@
                 margin: 0 auto;
                 display: block;
                 width: 80%;
+            }
+
+            @media only screen and (max-width: 660px) {
+                display: none;
             }
         }
     
