@@ -4,7 +4,7 @@ import {useState, useEffect, forwardRef} from 'react'
 import ContactForm from './contactform'
 import Thankyou from './thankyou'
 import withWaveSection from '../wavelayout'
-import Styles from '../../../styles/home/Contact.module.scss'
+import Styles from '../../../styles/contact/Contact.module.scss'
 
 
 //Home page - Skills/Tech stack section

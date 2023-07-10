@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Nav from './nav'
-import Styles from '../../styles/Footer.module.scss'
+import Styles from '../../styles/otherComponents/Footer.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithubSquare , faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
 

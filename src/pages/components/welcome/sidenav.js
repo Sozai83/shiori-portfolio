@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client"
 import { useRouter } from "next/router";
 import Image from 'next/image'
 import Link from 'next/link'
-import Styles from '../../../styles/home/SideNav.module.scss'
+import Styles from '../../../styles/welcome/SideNav.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faKiwiBird, faEgg } from '@fortawesome/free-solid-svg-icons';
 

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import ReactDOM from "react-dom/client";
 import Image from 'next/image'
 import Link from 'next/link'
-import Styles from '../../styles/Nav.module.scss'
+import Styles from '../../styles/otherComponents/Nav.module.scss'
 
 export default function Nav({bgcolor}) {
     const topNavUl = useRef();

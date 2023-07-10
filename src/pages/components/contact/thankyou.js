@@ -1,4 +1,4 @@
-import Styles from '../../../styles/home/Thankyou.module.scss'
+import Styles from '../../../styles/contact/Thankyou.module.scss'
 
 
 //Home page - Skills/Tech stack section

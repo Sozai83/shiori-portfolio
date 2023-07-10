@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {forwardRef} from 'react'
 import withWaveSection from '../wavelayout'
 import Typewriter from 'typewriter-effect';
-import Styles from '../../../styles/home/Welcome.module.scss'
+import Styles from '../../../styles/welcome/Welcome.module.scss'
 
 const Welcome = forwardRef(({ name }, ref) => {
   const tempName = name ? name : "world";

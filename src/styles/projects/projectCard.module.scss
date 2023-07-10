@@ -89,10 +89,13 @@
     }
 
     .techStacks {
-      margin-bottom: 10px;
+      margin: 10px 0 5px 0;
+      display: flex;
+      flex-wrap: wrap;
       span {
         padding: 6px 10px;
         margin-right: 10px;
+        margin-bottom: 5px;
         background: variables.$ivory;
         border-radius: 5px;
       }
