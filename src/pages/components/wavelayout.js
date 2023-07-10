@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from '../styles/home/WaveLayout.module.scss'
+import Styles from '../../styles/home/WaveLayout.module.scss'
 
 export default function withWaveSection(WrappedComponent , color, bgcolor, tempId) {
     // ...and returns another component...

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Nav from '../components/nav'
-import Footer from '../footer'
-import withWaveSection from '../wavelayout'
+import Footer from '../components/footer'
+import withWaveSection from '../components/wavelayout'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
