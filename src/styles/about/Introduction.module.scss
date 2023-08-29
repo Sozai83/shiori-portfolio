@@ -19,9 +19,16 @@
             figure{
                 width: 40%;
                 img{
-                    width: 80%;
+                    width: 50%;
                     margin: 0 auto;
                     display: block;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    width: 80%;
+                    img{
+                        width: 60%;
+                    }
                 }
 
                 @media only screen and (max-width: 800px) {
