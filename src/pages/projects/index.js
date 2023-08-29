@@ -3,6 +3,7 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import BraveBlossomsCard from "./projectCards/bravebrossoms";
 import ChiscordCard from "./projectCards/chiscord";
+import PartyBuddy from "./projectCards/partybuddy";
 import Styles from "../../styles/projects/projectTop.module.scss";
 
 export default function Main() {
@@ -10,6 +11,7 @@ export default function Main() {
     <>
       <Nav tempActive="topnav-home" />
       <main className={Styles.projectTop}>
+        <PartyBuddy />
         <ChiscordCard />
         <BraveBlossomsCard />
       </main>

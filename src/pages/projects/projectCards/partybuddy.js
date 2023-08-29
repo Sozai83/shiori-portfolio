@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
-export default function Chiscord() {
+export default function PartyBuddy() {
   return (
     <section className={Styles.projectCardWrapper}>
       <figure>
-        <Link href="https://chiscord.vercel.app/">
+        <Link href="https://party-buddy.vercel.app/">
           <Image
-            src="/projects_img/Chiscord_Sample.png"
+            src="/projects_img/PartyBuddy_Top.JPG"
             alt="Chiscord Sample Image"
             className={Styles.logo}
             width={440}
@@ -20,30 +20,34 @@ export default function Chiscord() {
         </Link>
       </figure>
       <section className={Styles.descriptionWrapper}>
-        <h2>Chiscord - Discord Clone</h2>
-        <h3>2023 July</h3>
+        <h2>Party Buddy</h2>
+        <h3>2023 August</h3>
         <div className={Styles.desciption}>
           <p>
-            Using firebase, I created an application that shows realtime data.
-            (Cloned Discord)
-            <br />
-            Users can login to the application using their Google account. Once
-            you login, you can create channel, add comments and see other
-            comments in each channel.
+            Utilizing
+            <Link href="https://www.thecocktaildb.com/api.php">
+              TheCocktailDB API
+            </Link>
+            , I created a web application give users an idea of a cocktail to
+            make. It also gives user an ability to filter with a major liquor
+            that they have in their pantry.
           </p>
         </div>
         <div className={Styles.techStacks}>
           <span>HTML</span>
           <span>SCSS</span>
           <span>TypeScript</span>
-          <span>Redux</span>
-          <span>Firebase</span>
+          <span>React</span>
+          <span>API</span>
         </div>
         <div className={Styles.outsideLinks}>
-          <a target="_blank" href="https://github.com/Sozai83/chiscord">
+          <a
+            target="_blank"
+            href="https://github.com/Sozai83/Project5_PartyBuddy"
+          >
             <FontAwesomeIcon icon={faGithubSquare} />
           </a>
-          <a target="_blank" href="https://chiscord.vercel.app/">
+          <a target="_blank" href="https://party-buddy.vercel.app/">
             <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </a>
         </div>
