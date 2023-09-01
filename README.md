@@ -20,8 +20,8 @@ Or you can access to repositries from following:
 #### [Brave Blossom Portal](https://github.com/Sozai83/COS60015-Assignment2v2)
 A single web application to intrtoduce my home rugby team - Brave brossom - built with React.js
 
-### [Chiscord](https://github.com/Sozai83/chiscord)
+#### [Chiscord](https://github.com/Sozai83/chiscord)
 A simple discord clone built with TypeScript, Redux and Firebase
 
-### [Party Buddy](https://github.com/Sozai83/Project5_PartyBuddy)
+#### [Party Buddy](https://github.com/Sozai83/Project5_PartyBuddy)
 A single web application helps you pick a cocktail - built with Next.js and TypeScript
