@@ -8,7 +8,8 @@
 * Jira
 
 ### A little bit of myself
-Nice to meet you. Thank you for stopping by.
+Nice to meet you!   
+Thank you for stopping by :)  
 I am a passionate software enginner who enjoys the process of imagineering.
 
 ### Check out my projects
