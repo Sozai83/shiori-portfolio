@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.4.0",
     "next": "^13.4.3",
+    "pdfjs-dist": "^4.2.67",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pdf": "^8.0.0",
